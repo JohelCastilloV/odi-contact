@@ -1,0 +1,101 @@
+{
+   "data":{
+      "id": 12313
+      "rs_contact":{
+      "rs_segmento":"2",
+      "rs_asesorainversiones":true,
+      "rs_origen":"odi",
+      "emailaddress1":"correopruebacrm6@mozej.com",
+      "mobilephone":" 955990173",
+      "rs_tipodedocumento":1,
+      "rs_otro":"49231210",
+      "firstname":"DAVID DANIEL ANTONIO",
+      "rs_apellidomaterno":"HERNANDEZ",
+      "rs_apellidopaterno":"RAMIREZ",
+      "birthdate":"1994-05-05",
+      "gendercode":"1",
+      "rs_lugarnacimiento@odata.bind":"/rs_paises(7577cf57-4c56-e811-a94f-000d3a1d51a5)",
+      "rs_Nacionalidad1@odata.bind":"/rs_nacionalidads(fec516d1-44a2-e811-a95c-000d3a1d7437)",
+      "rs_pas@odata.bind":"/rs_paises(7577cf57-4c56-e811-a94f-000d3a1d51a5)",
+      "rs_departamento@odata.bind":"/rs_departamentos(9fc29399-a66a-e811-a957-000d3a1d7326)",
+      "rs_provincia@odata.bind":"/rs_provincias(501cf7ed-a86a-e811-a957-000d3a1d7326)",
+      "rs_distrito@odata.bind":"/rs_distritos(ca077867-306b-e811-a954-000d3a1d7437)",
+      "rs_profesionocupacion@odata.bind":"/rs_profesionocupacions(8efafdbf-c420-e911-a972-000d3a1d7326)",
+      "rs_cargoocupacinlaboral@odata.bind":"/rs_profesionocupacions(ce909c7c-7125-e911-a96a-000d3a1d7437)",
+      "rs_canal@odata.bind":"/rs_canals(3baac395-9a30-e911-a979-000d3a1d5f25)",
+      "address1_line1":"AV. VICTOR CASTRO IGLESIAS 724",
+      "telephone1":"",
+      "familystatuscode":"1",
+      "educationcode":"4",
+      "rs_tipodeciudadano":2,
+      "rs_potencialidad":10,
+      "rs_rucpersonal":"10492769666",
+      "rs_tipocliente":1,
+      "rs_ruc":"20100055237",
+      "rs_rs_nombreempresa":"ALICORP SAA",
+      "address2_city":"AV. ARGENTINA NRO. 4793 URB. PARQUE INDUSTRIAL CALLAO CALLAO CARMEN",
+      "rs_fechadeingreso":"2021-03-15",
+      "rs_otrotipocliente":"INGENIERO (CUALQUIER ESPECIALIDAD)",
+      "rs_negociopropio":false,
+      "rs_anioservicio":"0"
+}
+,
+      "rs_contact_rs_informacionadicional_cliente":[
+         {
+            "rs_objetivodeinversin":4,
+            "rs_toleranciaalriesgo":3,
+            "rs_experienciaenelmercadodevaloresenellti":3,
+            "rs_fuentefondos1":true,
+            "rs_fuentefondos2":false,
+            "rs_fuentefondos3":false,
+            "rs_fuentefondos4":false,
+            "rs_fuentefondos5":false,
+            "rs_fuentefondos6":false,
+            "rs_fuentefondos7":false,
+            "rs_otrosrf2":"",
+            "rs_pasdeorigendefondos@odata.bind":"/rs_paises(7577cf57-4c56-e811-a94f-000d3a1d51a5)",
+            "rs_ingresomensualpromedio":1,
+            "rs_bienesinmuebles":1,
+            "rs_vehculosembarcaciones":1,
+            "rs_inversinenvaloresahorros":2,
+            "rs_deudabancaria":1,
+            "rs_mayordeedad":3,
+            "rs_erespep":2,
+            "rs_eressujetoobligado":2,
+            "rs_relacionsab1":true,
+            "rs_relacionsab3":false,
+            "rs_relacionsab5":false,
+            "rs_relacionsab2":false,
+            "rs_relacionsab4":false,
+            "rs_relacionsab6":false,
+            "rs_colaboradorintercorp":2,
+            "rs_empresa":"",
+            "rs_cargo":"",
+            "rs_parientecolaboradordirectivo":false,
+            "rs_nombrevinculacin":"",
+            "rs_vnculovinculacin":"",
+            "rs_ventadeinmuebles":1,
+            "rs_rs_ventadenegocioempresa":1,
+            "rs_bonificaciones":1,
+            "rs_utilidades":1,
+            "rs_otrosrf":1,
+            "rs_otrasfuentesdefondos":"",
+            "rs_tengoseasparticulares":false
+         }
+      ],
+      "rs_contact_rs_cuentasbancarias_Cliente":[
+         {
+            "transactioncurrencyid@odata.bind":"/transactioncurrencies(5c5e4a04-b040-e811-a94e-000d3a1995db)",
+            "rs_Tipodecuenta1@odata.bind":"/rs_tipocuentas(b183a3e4-8a5f-e811-a94f-000d3a1d531d)",
+            "rs_name":"898 322691568",
+            "rs_Banco@odata.bind":"/rs_bancos(f73db6d5-3bb8-e811-a95e-000d3a1d5285)"
+         },
+         {
+            "transactioncurrencyid@odata.bind":"/transactioncurrencies(7a0cff31-1f5a-e811-a94f-000d3a1d5264)",
+            "rs_Tipodecuenta1@odata.bind":"/rs_tipocuentas(b183a3e4-8a5f-e811-a94f-000d3a1d531d)",
+            "rs_name":"8983226917692",
+            "rs_Banco@odata.bind":"/rs_bancos(f73db6d5-3bb8-e811-a95e-000d3a1d5285)"
+         }
+      ]
+   }
+}

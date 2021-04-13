@@ -1,0 +1,95 @@
+--batch_1
+Content-Type: multipart/mixed;boundary=changeset_1
+
+--changeset_1
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: 1
+
+PATCH /api/data/v9.1/contacts({{data.id}}) HTTP/1.1
+Content-Type: application/json;type=entry
+
+{
+{{#each data.rs_contact}}
+  "{{@key}}" : "{{this}}" ,
+{{/each}}
+}
+
+{{#each data.rs_contact_rs_cuentasbancarias_Cliente}}
+
+--changeset_1
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: {{inc @index inc=2}}
+
+POST /api/data/v9.1/rs_cuentasbancariases HTTP/1.1
+Content-Type: application/json;type=entry
+
+{
+{{#each this}}
+  "{{@key}}" : "{{this}}",
+{{/each}}
+"rs_cliente_contact@odata.bind":"/contacts({{../data.id}})"
+}
+{{/each}}
+
+
+{{#each data.rs_contact_rs_informacionadicional_cliente}}
+
+--changeset_1
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: {{inc @index inc=10}}
+
+POST /api/data/v9.1/rs_informacionadicionals HTTP/1.1
+Content-Type: application/json;type=entry
+
+{
+{{#each this}}
+  "{{@key}}" : "{{this}}",
+{{/each}}
+"rs_cliente@odata.bind":"/contacts({{../data.id}})"
+}
+{{/each}}
+
+
+{{#each data.rs_contact_rs_conocercliente_Cliente}}
+
+--changeset_1
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: {{inc @index inc=20}}
+
+POST /api/data/v9.1/rs_conocerclientes HTTP/1.1
+Content-Type: application/json;type=entry
+
+{
+
+{{#each this}}
+  "{{@key}}" : {{#if (isNumeric this)}} {{this}} {{else}} "{{this}}" {{/if}},
+{{/each}}
+"rs_Cliente_contact@odata.bind":"/contacts({{../data.id}})"
+}
+{{/each}}
+
+
+{{#each data.rs_contact_rs_personasexpuestas_Cliente}}
+
+--changeset_1
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Content-ID: {{inc @index inc=30}}
+
+POST /api/data/v9.1/rs_personasexpuestases HTTP/1.1
+Content-Type: application/json;type=entry
+
+{
+{{#each this}}
+  "{{@key}}" : "{{this}}",
+{{/each}}
+"rs_Cliente_contact@odata.bind":"/contacts({{../data.id}})"
+}
+{{/each}}
+
+--changeset_1--
+--batch_1--
